@@ -1,4 +1,4 @@
 # Baekjoon
 java algorithm practice
 
-##System.out.println("hello!");
+System.out.println("hi");
