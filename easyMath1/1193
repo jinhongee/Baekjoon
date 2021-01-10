@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        boolean go=true;
+        int count=0,increment=0, line=0;
+        Scanner input=new Scanner(System.in);
+        int num=input.nextInt();
+        
+        while(go){
+            increment++;
+            count+=increment;
+            if(count>=num)
+                go=false;
+        }
+
+        line=num;
+        for(int i=1;i<increment;i++){
+            line-=i;
+        }
+        
+        if(increment%2==0){
+            System.out.println(line+"/"+(increment-line+1));
+        } else {
+            System.out.println((increment-line+1)+"/"+line);
+        }
+    }
+}
