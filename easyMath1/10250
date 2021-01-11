@@ -1,0 +1,34 @@
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main{
+    public static void main(String[] args) throws IOException {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer token;
+        int H, W, N, side, floor;
+        int trial=Integer.parseInt(br.readLine());
+        
+        for(int i=1;i<=trial;i++){
+            token=new StringTokenizer(br.readLine()," ");
+            H=Integer.parseInt(token.nextToken());
+            W=Integer.parseInt(token.nextToken());
+            N=Integer.parseInt(token.nextToken());
+        
+            if(N%H!=0){
+                side=N/H+1;
+                floor=N%H;
+            } else {
+                side=N/H;
+                floor=H;
+            }
+
+            if(W*H>=N&&side<10){
+                System.out.println(floor+"0"+side);
+            } else {
+                System.out.println(floor+""+side);
+            }
+        }
+    }
+}
