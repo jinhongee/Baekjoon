@@ -15,7 +15,7 @@ public class Main{
             
             for(int j=0;j<floor;j++){
                 for(int h=0;h<room;h++){
-                    
+                    num
                 }
             }
         ]
