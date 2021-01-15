@@ -19,12 +19,12 @@ public class Main{
         
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         int trial=Integer.parseInt(br.readLine());
-        int k, n;
+        int floor, room;
         
         for(int i=0;i<trial;i++){
             k=Integer.parseInt(br.readLine());
             n=Integer.parseInt(br.readLine());
-            System.out.println(apt[k][n-1]);
+            System.out.println(apt[floor][room-1]);
         }
     }
 }
