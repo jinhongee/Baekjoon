@@ -1,0 +1,27 @@
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+
+public class Main{
+    public static void main(String[] args) throws IOException {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int value=Integer.parseInt(br.readLine());
+        int count=1000000, sum=0;
+        double div;
+        
+        int three=value/3;
+        for(int i=0;i<=three;i++){
+            div=(double)(value-3*i)/5;
+            sum=i+(int)div;
+            if(div-(int)div==0 && sum<count){
+                count=sum;
+            }
+        }
+        
+        if(count==1000000){
+            System.out.println("-1");
+        } else {
+            System.out.println(count);
+        }
+    }
+}
