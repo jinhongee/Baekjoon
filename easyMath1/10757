@@ -11,6 +11,6 @@ public class Main{
         BigInteger a = new BigInteger(strs[0]);
         BigInteger b = new BigInteger(strs[1]);
         BigInteger c = a.add(b);
-        System.out.println(c); 
+        System.out.println(c);    
     }
 }
